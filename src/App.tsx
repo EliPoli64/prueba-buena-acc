@@ -112,17 +112,17 @@ const App: React.FC = () => {
   const metrics: MetricData[] = [
     {
       id: 'users',
-      value: '12,345',
+      value: '12345',
       label: 'Usuarios Totales',
       change: '↑ 15%',
       changeType: 'increase',
-      ariaLabel: 'Usuarios totales: 12,345, incremento del 15 porciento',
+      ariaLabel: 'Usuarios totales: 12345, incremento del 15 porciento',
       bgColor: '#3c3e8f',
       gradientBg: 'linear-gradient(135deg, #3c3d8f 0%, #4b2490 100%)'
     },
     {
       id: 'revenue',
-      value: '$87,234',
+      value: '$87234',
       label: 'Ingresos',
       change: '↑ 8%',
       changeType: 'increase',
@@ -338,15 +338,15 @@ const App: React.FC = () => {
           <form onSubmit={handleSubmit}>
             <div style={{ marginBottom: '1.5rem' }}>
               <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: '600' }}>Nombre Completo</label>
-              <input type="text" name="full-name" style={{ width: '100%', padding: '0.75rem 1rem', borderRadius: '8px', border: 'none', fontSize: '0.95rem', fontFamily: 'inherit', backgroundColor: colors.light, color: colors.dark }} />
+              <input type="text" name="full-name" style={{ width: '97%', padding: '0.75rem 1rem', borderRadius: '8px', border: 'none', fontSize: '0.95rem', fontFamily: 'inherit', backgroundColor: colors.light, color: colors.dark }} />
             </div>
             <div style={{ marginBottom: '1.5rem' }}>
               <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: '600' }}>Correo Electrónico</label>
-              <input type="email" name="email" style={{ width: '100%', padding: '0.75rem 1rem', borderRadius: '8px', border: 'none', fontSize: '0.95rem', fontFamily: 'inherit', backgroundColor: colors.light, color: colors.dark }} />
+              <input type="email" name="email" style={{ width: '97%', padding: '0.75rem 1rem', borderRadius: '8px', border: 'none', fontSize: '0.95rem', fontFamily: 'inherit', backgroundColor: colors.light, color: colors.dark }} />
             </div>
             <div style={{ marginBottom: '1.5rem' }}>
               <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: '600' }}>Mensaje</label>
-              <textarea name="message" rows={4} style={{ width: '100%', padding: '0.75rem 1rem', borderRadius: '8px', border: 'none', fontSize: '0.95rem', fontFamily: 'inherit', backgroundColor: colors.light, color: colors.dark }} ></textarea>
+              <textarea name="message" rows={4} style={{ width: '97%', padding: '0.75rem 1rem', borderRadius: '8px', border: 'none', fontSize: '0.95rem', fontFamily: 'inherit', backgroundColor: colors.light, color: colors.dark }} ></textarea>
             </div>
             <button type="submit" style={{ backgroundColor: colors.primary, border: 'none', padding: '0.75rem 2rem', borderRadius: '8px', color: colors.white, cursor: 'pointer', width: '100%', fontWeight: '600', transition: 'all 0.2s ease' }}>
               Enviar
@@ -622,7 +622,7 @@ const App: React.FC = () => {
                 aria-required={true}
                 aria-invalid={!!formErrors.name}
                 aria-describedby={formErrors.name ? 'name-error' : undefined}
-                style={{ width: '100%', padding: '0.75rem 1rem', borderRadius: '8px', border: formErrors.name ? `2px solid ${colors.danger}` : `2px solid transparent`, backgroundColor: colors.white, color: colors.dark, fontFamily: 'inherit', fontSize: '0.95rem' }}
+                style={{ width: '97%', padding: '0.75rem 1rem', borderRadius: '8px', border: formErrors.name ? `2px solid ${colors.danger}` : `2px solid transparent`, backgroundColor: colors.white, color: colors.dark, fontFamily: 'inherit', fontSize: '0.95rem' }}
               />
               {formErrors.name && (
                 <div id="name-error" role="alert" style={{ color: colors.danger, marginTop: '0.25rem', fontSize: '0.8rem' }}>
@@ -639,7 +639,7 @@ const App: React.FC = () => {
                 aria-required={true}
                 aria-invalid={!!formErrors.email}
                 aria-describedby={formErrors.email ? 'email-error' : undefined}
-                style={{ width: '100%', padding: '0.75rem 1rem', borderRadius: '8px', border: formErrors.email ? `2px solid ${colors.danger}` : `2px solid transparent`, backgroundColor: colors.white, color: colors.dark, fontFamily: 'inherit', fontSize: '0.95rem' }}
+                style={{ width: '97%', padding: '0.75rem 1rem', borderRadius: '8px', border: formErrors.email ? `2px solid ${colors.danger}` : `2px solid transparent`, backgroundColor: colors.white, color: colors.dark, fontFamily: 'inherit', fontSize: '0.95rem' }}
               />
               {formErrors.email && (
                 <div id="email-error" role="alert" style={{ color: colors.danger, marginTop: '0.25rem', fontSize: '0.8rem' }}>
@@ -656,7 +656,7 @@ const App: React.FC = () => {
                 aria-required={true}
                 aria-invalid={!!formErrors.message}
                 aria-describedby={formErrors.message ? 'message-error' : undefined}
-                style={{ width: '100%', padding: '0.75rem 1rem', borderRadius: '8px', border: formErrors.message ? `2px solid ${colors.danger}` : `2px solid transparent`, backgroundColor: colors.white, color: colors.dark, fontFamily: 'inherit', fontSize: '0.95rem' }}
+                style={{ width: '97%', padding: '0.75rem 1rem', borderRadius: '8px', border: formErrors.message ? `2px solid ${colors.danger}` : `2px solid transparent`, backgroundColor: colors.white, color: colors.dark, fontFamily: 'inherit', fontSize: '0.95rem' }}
               ></textarea>
               {formErrors.message && (
                 <div id="message-error" role="alert" style={{ color: colors.danger, marginTop: '0.25rem', fontSize: '0.8rem' }}>
